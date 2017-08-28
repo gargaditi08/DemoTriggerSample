@@ -1,0 +1,3 @@
+github "AFNetworking/AFNetworking" ~> 3.0
+github "Mantle/Mantle"
+github "kontaktio/kontakt-ios-sdk" ~> 1.4

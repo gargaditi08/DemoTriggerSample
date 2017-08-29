@@ -23,11 +23,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.beacon = [[VATriggerBeacon alloc] init];
-    [self.beacon setDelegate:self];
-    [self.beacon setNamespaceID:@"<your namespace>"];
-    [[NCTriggerManager sharedManager] registerTrigger:self.beacon];
-    [self.beacon start];
+    NCUser *user = [NCUser new];
+    user.email = @"<Email>";
+    user.password = @"<Password>";
+    
+    [NCAPIManager login:user callback:^(NSError *error) {
+        if (!error) {
+            self.beacon = [[VATriggerBeacon alloc] init];
+            [self.beacon setDelegate:self];
+            [self.beacon setNamespaceID:@"<Namespace>"];
+            [[NCTriggerManager sharedManager] registerTrigger:self.beacon];
+            [self.beacon start];
+        }
+    }];
 }
 
 

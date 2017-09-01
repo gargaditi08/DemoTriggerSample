@@ -8,10 +8,10 @@
 
 #import <AFNetworking/AFNetworking.h>
 
-static NSString * const baseAPI;
-
 @interface NCSessionManager : AFHTTPSessionManager
 
 + (id)sharedManager;
+
+- (NSURL *)baseURL;
 
 @end

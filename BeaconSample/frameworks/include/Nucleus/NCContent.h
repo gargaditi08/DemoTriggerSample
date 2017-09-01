@@ -9,21 +9,28 @@
 #import "NCGenericModel.h"
 #import "NCContentTerms.h"
 
-typedef NS_ENUM(NSUInteger, NCContentStatus) {
-    NCContentStatusUnknown,
-    NCContentStatusCatch,
-    NCContentStatusView,
-    NCContentStatusAccept,
-    NCContentStatusDeclined,
-    NCContentStatusRedeemInStore,
-    NCContentStatusRedeemOnline,
-    NCContentStatusRedeemDelete
+typedef NS_ENUM(NSUInteger, NCStatus) {
+    NCStatusUnknown,
+    NCStatusCatch,
+    NCStatusView,
+    NCStatusAccept,
+    NCStatusDeclined,
+    NCStatusRedeemInStore,
+    NCStatusRedeemOnline,
+    NCStatusRedeemDelete
 };
+
+@interface NCContentStatus : NCGenericModel
+
+@property (nonatomic, strong) NSNumber *status;
+
+@end
 
 @interface NCImageMeta : NCGenericModel
 
 @property (nonatomic, strong) NSString *heroImageUrl;
 @property (nonatomic, strong) NSString *bodyImageUrl;
+@property (nonatomic, strong) NSString *overlayImageUrl;
 @property (nonatomic, strong) NSString *thumbnailImageUrl;
 
 @end
@@ -31,15 +38,31 @@ typedef NS_ENUM(NSUInteger, NCContentStatus) {
 @interface NCScratcherMeta : NCGenericModel
 
 @property (nonatomic) BOOL enabled;
-@property (nonatomic, strong) NSString *overlayUrl;
-@property (nonatomic, strong) NSString *heroUrl;
+@property (nonatomic, strong) NCImageMeta *images;
+@property (nonatomic, strong) NSString *scratcherDescription;
+@property (nonatomic, strong) NSString *exclamation;
+
+@end
+
+@interface NCRedemptionCode : NCGenericModel
+
+@property (nonatomic, strong) NSString *value;
+@property (nonatomic, strong) NSString *format;
+@property (nonatomic, strong) NSString *source;
+
+@end
+
+@interface NCRedemptionMeta : NCGenericModel
+
+@property (nonatomic, strong) NCRedemptionCode *code;
+@property (nonatomic, strong) NSNumber *method;
 
 @end
 
 @interface NCContent : NCGenericModel
 
-@property (nonatomic) NSNumber *Id;
-@property (nonatomic, strong) NSString *name; // Required
+@property (nonatomic, strong) NSNumber *Id;
+@property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *brand;
 @property (nonatomic, strong) NSString *displayName;
 @property (nonatomic, strong) NSString *contentDescription;
@@ -47,11 +70,9 @@ typedef NS_ENUM(NSUInteger, NCContentStatus) {
 @property (nonatomic, strong) NSString *expiration;
 @property (nonatomic, strong) NCScratcherMeta *scratcher;
 @property (nonatomic, strong) NCImageMeta *image;
-@property (nonatomic) NSNumber *quantity;
-@property (nonatomic, strong) NSString *type; // Required
-@property (nonatomic) NSNumber *redemptionMethod; // 1 Online, 2 In Store, 3 Online & In Store
-@property (nonatomic, strong) NSString *redemptionCode;
-@property (nonatomic, strong) NSString *redemptionUrl;
+@property (nonatomic, strong) NSNumber *quantity;
+@property (nonatomic, strong) NSString *type;
+@property (nonatomic, strong) NCRedemptionMeta *redemption;
 @property (nonatomic, strong) NSString *scratcherName;
 @property (nonatomic, strong) NSString *scratcherDescription;
 @property (nonatomic, strong) NSNumber *contentTermsId;

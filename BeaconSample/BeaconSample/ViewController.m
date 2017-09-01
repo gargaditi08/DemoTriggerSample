@@ -27,6 +27,8 @@
     user.email = @"<Email>";
     user.password = @"<Password>";
     
+    [NCAPIManager setBaseUrl:@"<URL>"];
+    [NCAPIManager setAPIKey:@"<APIKEY>"];
     [NCAPIManager login:user callback:^(NSError *error) {
         if (!error) {
             self.beacon = [[VATriggerBeacon alloc] init];
@@ -37,7 +39,6 @@
         }
     }];
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -60,10 +61,33 @@
             if (!error) {
                 for (NCContent *item in content) {
                     NSLog(@"Content found: %@", item.name);
+                    NCContentStatus *itemStatus = [NCContentStatus new];
+                    itemStatus.status = @(NCStatusCatch);
+                    [NCContentManager contentUpdate:item status:itemStatus];
                 }
             }
         }];
     }
+}
+
+#pragma mark - Hypothetical Methods
+
+- (void)didView:(NCContent *)content {
+    NCContentStatus *itemStatus = [NCContentStatus new];
+    itemStatus.status = @(NCStatusView);
+    [NCContentManager contentUpdate:content status:itemStatus];
+}
+
+- (void)didAccept:(NCContent *)content {
+    NCContentStatus *itemStatus = [NCContentStatus new];
+    itemStatus.status = @(NCStatusAccept);
+    [NCContentManager contentUpdate:content status:itemStatus];
+}
+
+- (void)didDecline:(NCContent *)content {
+    NCContentStatus *itemStatus = [NCContentStatus new];
+    itemStatus.status = @(NCStatusDeclined);
+    [NCContentManager contentUpdate:content status:itemStatus];
 }
 
 

@@ -32,6 +32,19 @@ typedef NS_ENUM(NSUInteger, NCRequestType) {
 #pragma mark - Getters / Setters
 
 /**
+ * Base URL to make rquest
+ */
++ (void)setBaseUrl:(NSString *)url;
++ (NSString *)baseUrl;
+
+/**
+ * Required <br>
+ * API Key for the SDK
+ */
++ (void)setAPIKey:(NSString *)key;
++ (NSString *)APIKey;
+
+/**
  * This doesn't need to be set manually <br>
  * The user object is handler in the API Request
  */
@@ -100,7 +113,7 @@ typedef NS_ENUM(NSUInteger, NCRequestType) {
 /**
  * Update content with a status
  */
-+ (void)contentUpdate:(NCContent *)content status:(NCContentStatus)status;
++ (void)contentUpdate:(NCContent *)content status:(NCContentStatus *)status;
 
 /**
  * Insert content into wallet

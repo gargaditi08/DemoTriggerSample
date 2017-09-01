@@ -17,11 +17,13 @@ typedef NS_ENUM(NSUInteger, NCUserGender) {
 @interface NCUser : NCGenericModel
 
 @property (nonatomic) NSNumber *Id;
+@property (nonatomic, strong) NSString *externalId;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *email; // Required
 @property (nonatomic, strong) NSString *birthday;
 @property (nonatomic, strong) NSNumber *gender;
 @property (nonatomic, strong) NSString *password; // Required
 @property (nonatomic, strong) NSString *token;
+@property (nonatomic, strong) NSString *login_method;
 
 @end

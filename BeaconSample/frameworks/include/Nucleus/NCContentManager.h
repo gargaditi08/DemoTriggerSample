@@ -66,7 +66,7 @@ typedef void (^Scratcher)(NSArray <NCContent *>*wallet, NSArray <NCContent *>*sc
  * Update content from a signal <br>
  * updates the server with the current state of the content
  */
-+ (void)contentUpdate:(NCContent *)content status:(NCContentStatus)status;
++ (void)contentUpdate:(NCContent *)content status:(NCContentStatus *)status;
 
 /**
  * Insert content from a signal <br>

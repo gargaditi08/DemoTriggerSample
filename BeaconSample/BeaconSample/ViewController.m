@@ -29,13 +29,20 @@
     
     [NCAPIManager setBaseUrl:@"<URL>"];
     [NCAPIManager setAPIKey:@"<APIKEY>"];
-    [NCAPIManager login:user callback:^(NSError *error) {
-        if (!error) {
-            self.beacon = [[VATriggerBeacon alloc] init];
-            [self.beacon setDelegate:self];
-            [self.beacon setNamespaceID:@"<Namespace>"];
-            [[NCTriggerManager sharedManager] registerTrigger:self.beacon];
-            [self.beacon start];
+    
+    [NCAPIManager login:user callback:^(NSError *error){
+        if (error) {
+            if (error.code == 404) {
+                [NCAPIManager registerUser:[NCUser testCase] callback:^(NSError *error) {
+                    if (!error) {
+                        [NCAPIManager login:[NCUser testCase] callback:^(NSError *error){
+                            [self setupBeacons];
+                        }];
+                    }
+                }];
+            }
+        } else {
+            [self setupBeacons];
         }
     }];
 }
@@ -43,6 +50,14 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)setupBeacons {
+    self.beacon = [[VATriggerBeacon alloc] init];
+    [self.beacon setDelegate:self];
+    [self.beacon setNamespaceID:@"<Namespace>"];
+    [[NCTriggerManager sharedManager] registerTrigger:self.beacon];
+    [self.beacon start];
 }
 
 #pragma mark - TriggerManager Callbacks

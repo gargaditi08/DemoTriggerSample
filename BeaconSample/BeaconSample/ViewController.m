@@ -23,19 +23,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    NCUser *user = [NCUser new];
-    user.email = @"<Email>";
-    user.password = @"<Password>";
+    NCUser *user = [NCUser testCase];
+    user.externalId = @"<external Id>";
     
     [NCAPIManager setBaseUrl:@"<URL>"];
-    [NCAPIManager setAPIKey:@"<APIKEY>"];
+    [NCAPIManager setAPIKey:@"<API KEY>"];
     
     [NCAPIManager login:user callback:^(NSError *error){
         if (error) {
             if (error.code == 404) {
-                [NCAPIManager registerUser:[NCUser testCase] callback:^(NSError *error) {
+                [NCAPIManager registerUser:user callback:^(NSError *error) {
                     if (!error) {
-                        [NCAPIManager login:[NCUser testCase] callback:^(NSError *error){
+                        [NCAPIManager login:user callback:^(NSError *error){
                             [self setupBeacons];
                         }];
                     }
@@ -55,7 +54,7 @@
 - (void)setupBeacons {
     self.beacon = [[VATriggerBeacon alloc] init];
     [self.beacon setDelegate:self];
-    [self.beacon setNamespaceID:@"<Namespace>"];
+    [self.beacon setNamespaceID:@"<Namespace Id>"];
     [[NCTriggerManager sharedManager] registerTrigger:self.beacon];
     [self.beacon start];
 }

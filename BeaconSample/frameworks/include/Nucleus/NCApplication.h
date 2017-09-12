@@ -10,9 +10,8 @@
 
 @interface NCApplication : NCGenericModel
 
-@property (nonatomic, strong, readonly) NSString *uuid;
-@property (nonatomic, strong, readonly) NSString *deviceId;
-@property (nonatomic, strong) NSString *apiKey;
+@property (nonatomic, strong) NSString *uuid;
+@property (nonatomic, strong) NSString *deviceId;
 @property (nonatomic, strong) NSString *manufacturer;
 @property (nonatomic, strong) NSString *model;
 @property (nonatomic, strong) NSString *locale;
@@ -23,7 +22,6 @@
 @property (nonatomic, strong) NSString *sdkVersion;
 @property (nonatomic, strong) NSString *carrier;
 
-- (id)initWithAPIKey:(NSString *)key;
 + (NSDictionary *)JSONKeyPathsByPropertyKey;
 
 @end

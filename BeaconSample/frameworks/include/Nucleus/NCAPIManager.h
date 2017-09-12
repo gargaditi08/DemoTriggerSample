@@ -98,6 +98,20 @@ typedef NS_ENUM(NSUInteger, NCRequestType) {
 
 @end
 
+@interface NCAPIManager (Device)
+
+/**
+ * Creates a new device on the server
+ */
++ (void)createDevice:(void (^)(NSError *error))callback;
+
+/**
+ * Updates a created device
+ */
++ (void)updateDevice:(void (^)(NSError *error))callback;
+
+@end
+
 @interface NCAPIManager (Content)
 
 /**
@@ -128,7 +142,7 @@ typedef NS_ENUM(NSUInteger, NCRequestType) {
 /**
  * Get content terms
  */
-+ (void)contentTerms:(NCContent *)content callback:(void (^)(NCContent *content, NSError *error))callback;
++ (void)contentTerms:(NCContent *)content callback:(void (^)(NCContentTerms *content, NSError *error))callback;
 
 @end
 

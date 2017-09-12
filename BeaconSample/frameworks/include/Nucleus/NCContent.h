@@ -76,6 +76,5 @@ typedef NS_ENUM(NSUInteger, NCStatus) {
 @property (nonatomic, strong) NSString *scratcherName;
 @property (nonatomic, strong) NSString *scratcherDescription;
 @property (nonatomic, strong) NSNumber *contentTermsId;
-@property (nonatomic, strong) NCContentTerms *terms;
 
 @end

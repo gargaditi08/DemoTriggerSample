@@ -18,8 +18,6 @@
 		7E52B8531F50935B00656923 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E52B8501F50935400656923 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7E52B8551F50935B00656923 /* KontaktSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E52B84E1F50934E00656923 /* KontaktSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7E52B8571F50935B00656923 /* Mantle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E52B84C1F50934900656923 /* Mantle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7ED5452E1F68927B00AE2675 /* EMLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED545141F68927B00AE2675 /* EMLoginView.m */; };
-		7ED5452F1F68927B00AE2675 /* EMLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ED545151F68927B00AE2675 /* EMLoginView.xib */; };
 		7ED545311F68927B00AE2675 /* libNucleus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED5452C1F68927B00AE2675 /* libNucleus.a */; };
 		7ED545581F689E4100AE2675 /* libValenceBeacon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED5452D1F68927B00AE2675 /* libValenceBeacon.a */; };
 /* End PBXBuildFile section */
@@ -54,9 +52,6 @@
 		7E52B84C1F50934900656923 /* Mantle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mantle.framework; path = Carthage/Build/iOS/Mantle.framework; sourceTree = "<group>"; };
 		7E52B84E1F50934E00656923 /* KontaktSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KontaktSDK.framework; path = Carthage/Build/iOS/KontaktSDK.framework; sourceTree = "<group>"; };
 		7E52B8501F50935400656923 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
-		7ED545131F68927B00AE2675 /* EMLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMLoginView.h; sourceTree = "<group>"; };
-		7ED545141F68927B00AE2675 /* EMLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMLoginView.m; sourceTree = "<group>"; };
-		7ED545151F68927B00AE2675 /* EMLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EMLoginView.xib; sourceTree = "<group>"; };
 		7ED545171F68927B00AE2675 /* NCAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCAPIManager.h; sourceTree = "<group>"; };
 		7ED545181F68927B00AE2675 /* NCApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCApplication.h; sourceTree = "<group>"; };
 		7ED545191F68927B00AE2675 /* NCContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCContent.h; sourceTree = "<group>"; };
@@ -76,7 +71,6 @@
 		7ED545271F68927B00AE2675 /* NCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCUser.h; sourceTree = "<group>"; };
 		7ED545281F68927B00AE2675 /* NCValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCValidation.h; sourceTree = "<group>"; };
 		7ED5452A1F68927B00AE2675 /* VATriggerBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VATriggerBeacon.h; sourceTree = "<group>"; };
-		7ED5452B1F68927B00AE2675 /* libElement.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libElement.a; path = frameworks/libElement.a; sourceTree = "<group>"; };
 		7ED5452C1F68927B00AE2675 /* libNucleus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNucleus.a; path = frameworks/libNucleus.a; sourceTree = "<group>"; };
 		7ED5452D1F68927B00AE2675 /* libValenceBeacon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libValenceBeacon.a; path = frameworks/libValenceBeacon.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,7 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				7ED545111F68927B00AE2675 /* include */,
-				7ED5452B1F68927B00AE2675 /* libElement.a */,
 				7ED5452C1F68927B00AE2675 /* libNucleus.a */,
 				7ED5452D1F68927B00AE2675 /* libValenceBeacon.a */,
 				7E52B8501F50935400656923 /* AFNetworking.framework */,
@@ -155,22 +148,11 @@
 		7ED545111F68927B00AE2675 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				7ED545121F68927B00AE2675 /* Element */,
 				7ED545161F68927B00AE2675 /* Nucleus */,
 				7ED545291F68927B00AE2675 /* ValenceBeacon */,
 			);
 			name = include;
 			path = frameworks/include;
-			sourceTree = "<group>";
-		};
-		7ED545121F68927B00AE2675 /* Element */ = {
-			isa = PBXGroup;
-			children = (
-				7ED545131F68927B00AE2675 /* EMLoginView.h */,
-				7ED545141F68927B00AE2675 /* EMLoginView.m */,
-				7ED545151F68927B00AE2675 /* EMLoginView.xib */,
-			);
-			path = Element;
 			sourceTree = "<group>";
 		};
 		7ED545161F68927B00AE2675 /* Nucleus */ = {
@@ -268,7 +250,6 @@
 			files = (
 				7E52B82B1F5091A400656923 /* LaunchScreen.storyboard in Resources */,
 				7E52B8281F5091A400656923 /* Assets.xcassets in Resources */,
-				7ED5452F1F68927B00AE2675 /* EMLoginView.xib in Resources */,
 				7E52B8261F5091A400656923 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +263,6 @@
 			files = (
 				7E52B8231F5091A400656923 /* ViewController.m in Sources */,
 				7E52B8201F5091A400656923 /* AppDelegate.m in Sources */,
-				7ED5452E1F68927B00AE2675 /* EMLoginView.m in Sources */,
 				7E52B81D1F5091A400656923 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

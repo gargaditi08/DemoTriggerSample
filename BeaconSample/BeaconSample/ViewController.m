@@ -23,8 +23,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    NCUser *user = [NCUser testCase];
-    user.externalId = @"<external Id>";
+    NCUser *user = [NCUser new];
+    user.email = @"<user email>";
+    user.password = @"<password>";
+    user.login_method = @"email";
     
     [NCAPIManager setBaseUrl:@"<URL>"];
     [NCAPIManager setAPIKey:@"<API KEY>"];

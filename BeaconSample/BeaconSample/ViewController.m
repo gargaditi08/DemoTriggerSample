@@ -73,16 +73,12 @@
 
 - (void)trigger:(NCGenericTrigger *)trigger signal:(NCSignal *)signal didCatchContent:(NSArray <NCContent *>*)content error:(NSError *)error {
     if (!error) {
-        [NCContentManager contentCatch:signal callback:^(NSArray <NCContent *>*content, NSError *error){
-            if (!error) {
-                for (NCContent *item in content) {
-                    NSLog(@"Content found: %@", item.name);
-                    NCContentStatus *itemStatus = [NCContentStatus new];
-                    itemStatus.status = @(NCStatusCatch);
-                    [NCContentManager contentUpdate:item status:itemStatus];
-                }
-            }
-        }];
+        for (NCContent *item in content) {
+            NSLog(@"Content found: %@", item.name);
+            NCContentStatus *itemStatus = [NCContentStatus new];
+            itemStatus.status = @(NCStatusCatch);
+            [NCContentManager contentUpdate:item status:itemStatus];
+        }
     }
 }
 

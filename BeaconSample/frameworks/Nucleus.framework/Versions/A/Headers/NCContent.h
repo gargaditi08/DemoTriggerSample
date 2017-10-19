@@ -48,7 +48,6 @@ typedef NS_ENUM(NSUInteger, NCStatus) {
 
 @property (nonatomic, strong) NSString *value;
 @property (nonatomic, strong) NSString *format;
-@property (nonatomic, strong) NSString *source;
 
 @end
 
@@ -62,6 +61,7 @@ typedef NS_ENUM(NSUInteger, NCStatus) {
 @interface NCContent : NCGenericModel
 
 @property (nonatomic, strong) NSNumber *Id;
+@property (nonatomic, strong) NSString *externalId;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *brand;
 @property (nonatomic, strong) NSString *displayName;

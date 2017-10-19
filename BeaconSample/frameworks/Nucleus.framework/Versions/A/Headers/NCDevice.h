@@ -10,7 +10,6 @@
 
 @interface NCDevice : NCGenericModel
 
-/* Required */
 @property (nonatomic, strong) NSString *model;
 @property (nonatomic, strong) NSString *locale;
 @property (nonatomic, strong) NSString *operatingSystem;

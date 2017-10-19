@@ -33,6 +33,12 @@
 - (void)unregisterTrigger:(nonnull NCGenericTrigger *)trigger;
 
 /**
+ * Enables callback for classes dependent on knowing if devices were found <br>
+ * only for beacons
+ */
+- (void)trigger:(nonnull NCGenericTrigger *)trigger foundDevices:(nullable NSArray *)devices;
+
+/**
  * Compares a signal to a trigger, and request content if they match <br>
  * Calls the following method from NCGenericTrigger
  * @code

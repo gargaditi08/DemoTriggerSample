@@ -6,7 +6,7 @@
 //  Copyright © 2017 actv8me. All rights reserved.
 //
 
-#import "NCGenericTrigger.h"
+#import <Nucleus/NCGenericTrigger.h>
 
 /**
  * Bluetooth Permissions required <br>

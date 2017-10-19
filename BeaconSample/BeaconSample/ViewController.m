@@ -7,9 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "NCTriggerManager.h"
-#import "NCContentManager.h"
-#import "VATriggerBeacon.h"
+#import <Nucleus/Nucleus.h>
+#import <ValenceBeacon/VATriggerBeacon.h>
 
 @interface ViewController () <NCTriggerDelegate>
 

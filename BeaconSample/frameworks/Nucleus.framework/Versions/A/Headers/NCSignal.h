@@ -16,6 +16,7 @@
 @property (strong, nonatomic) NCContent *content; // Output
 @property (strong, nonatomic) NSString *type;
 @property (strong, nonatomic) NSDate *timestamp;
+@property (strong, nonatomic) id original; // original object
 
 - (instancetype)initWithUUID:(NSString *)uuid;
 

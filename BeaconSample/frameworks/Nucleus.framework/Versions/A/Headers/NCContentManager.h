@@ -7,8 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NCModels.h"
 #import "NCScratcherState.h"
+#import "NCAPIManager.h"
+#import "NCApplication.h"
+#import "NCContent.h"
+#import "NCContentTerms.h"
+#import "NCDevice.h"
+#import "NCUser.h"
+#import "NCSignal.h"
+#import "NCScratcherResponse.h"
+#import "NCGenericModel.h"
+
 
 /**
  * Storycard Callback
@@ -110,7 +119,7 @@ typedef void (^Scratcher)(NSArray <NCContent *>*wallet, NSArray <NCContent *>*sc
 
 /**
  * Debug method to reset scratchers to an "unscratched" state
- */
+ */ 
 + (void)scratchersResetCallback:(void (^)())callback;
 
 #pragma mark - Get Storycard

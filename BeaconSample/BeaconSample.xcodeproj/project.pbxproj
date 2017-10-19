@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E3EF0281F99629700CD382C /* Nucleus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3EF0271F99628500CD382C /* Nucleus.framework */; };
+		7E3EF0291F99629700CD382C /* ValenceBeacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3EF0261F99628500CD382C /* ValenceBeacon.framework */; };
 		7E52B81D1F5091A400656923 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E52B81C1F5091A400656923 /* main.m */; };
 		7E52B8201F5091A400656923 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E52B81F1F5091A400656923 /* AppDelegate.m */; };
 		7E52B8231F5091A400656923 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E52B8221F5091A400656923 /* ViewController.m */; };
@@ -14,12 +16,9 @@
 		7E52B8281F5091A400656923 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E52B8271F5091A400656923 /* Assets.xcassets */; };
 		7E52B82B1F5091A400656923 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E52B8291F5091A400656923 /* LaunchScreen.storyboard */; };
 		7E52B84D1F50934900656923 /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E52B84C1F50934900656923 /* Mantle.framework */; };
-		7E52B84F1F50934E00656923 /* KontaktSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E52B84E1F50934E00656923 /* KontaktSDK.framework */; };
 		7E52B8531F50935B00656923 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E52B8501F50935400656923 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7E52B8551F50935B00656923 /* KontaktSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E52B84E1F50934E00656923 /* KontaktSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7E52B8571F50935B00656923 /* Mantle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E52B84C1F50934900656923 /* Mantle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7ED545311F68927B00AE2675 /* libNucleus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED5452C1F68927B00AE2675 /* libNucleus.a */; };
-		7ED545581F689E4100AE2675 /* libValenceBeacon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED5452D1F68927B00AE2675 /* libValenceBeacon.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +38,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7E3EF0261F99628500CD382C /* ValenceBeacon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ValenceBeacon.framework; path = frameworks/ValenceBeacon.framework; sourceTree = "<group>"; };
+		7E3EF0271F99628500CD382C /* Nucleus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nucleus.framework; path = frameworks/Nucleus.framework; sourceTree = "<group>"; };
 		7E52B8181F5091A400656923 /* BeaconSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeaconSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E52B81C1F5091A400656923 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7E52B81E1F5091A400656923 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,27 +53,6 @@
 		7E52B84C1F50934900656923 /* Mantle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mantle.framework; path = Carthage/Build/iOS/Mantle.framework; sourceTree = "<group>"; };
 		7E52B84E1F50934E00656923 /* KontaktSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KontaktSDK.framework; path = Carthage/Build/iOS/KontaktSDK.framework; sourceTree = "<group>"; };
 		7E52B8501F50935400656923 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
-		7ED545171F68927B00AE2675 /* NCAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCAPIManager.h; sourceTree = "<group>"; };
-		7ED545181F68927B00AE2675 /* NCApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCApplication.h; sourceTree = "<group>"; };
-		7ED545191F68927B00AE2675 /* NCContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCContent.h; sourceTree = "<group>"; };
-		7ED5451A1F68927B00AE2675 /* NCContentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCContentManager.h; sourceTree = "<group>"; };
-		7ED5451B1F68927B00AE2675 /* NCContentTerms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCContentTerms.h; sourceTree = "<group>"; };
-		7ED5451C1F68927B00AE2675 /* NCDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCDevice.h; sourceTree = "<group>"; };
-		7ED5451D1F68927B00AE2675 /* NCGenericModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCGenericModel.h; sourceTree = "<group>"; };
-		7ED5451E1F68927B00AE2675 /* NCGenericTrigger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCGenericTrigger.h; sourceTree = "<group>"; };
-		7ED5451F1F68927B00AE2675 /* NCGeofence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCGeofence.h; sourceTree = "<group>"; };
-		7ED545201F68927B00AE2675 /* NCModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCModels.h; sourceTree = "<group>"; };
-		7ED545211F68927B00AE2675 /* NCScratcherResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCScratcherResponse.h; sourceTree = "<group>"; };
-		7ED545221F68927B00AE2675 /* NCScratcherState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCScratcherState.h; sourceTree = "<group>"; };
-		7ED545231F68927B00AE2675 /* NCSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCSessionManager.h; sourceTree = "<group>"; };
-		7ED545241F68927B00AE2675 /* NCSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCSignal.h; sourceTree = "<group>"; };
-		7ED545251F68927B00AE2675 /* NCStorycard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCStorycard.h; sourceTree = "<group>"; };
-		7ED545261F68927B00AE2675 /* NCTriggerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCTriggerManager.h; sourceTree = "<group>"; };
-		7ED545271F68927B00AE2675 /* NCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCUser.h; sourceTree = "<group>"; };
-		7ED545281F68927B00AE2675 /* NCValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCValidation.h; sourceTree = "<group>"; };
-		7ED5452A1F68927B00AE2675 /* VATriggerBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VATriggerBeacon.h; sourceTree = "<group>"; };
-		7ED5452C1F68927B00AE2675 /* libNucleus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNucleus.a; path = frameworks/libNucleus.a; sourceTree = "<group>"; };
-		7ED5452D1F68927B00AE2675 /* libValenceBeacon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libValenceBeacon.a; path = frameworks/libValenceBeacon.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,11 +60,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7ED545311F68927B00AE2675 /* libNucleus.a in Frameworks */,
-				7ED545581F689E4100AE2675 /* libValenceBeacon.a in Frameworks */,
-				7E52B84F1F50934E00656923 /* KontaktSDK.framework in Frameworks */,
-				7E52B84F1F50934E00656923 /* KontaktSDK.framework in Frameworks */,
 				7E52B84D1F50934900656923 /* Mantle.framework in Frameworks */,
+				7E3EF0281F99629700CD382C /* Nucleus.framework in Frameworks */,
+				7E3EF0291F99629700CD382C /* ValenceBeacon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +75,7 @@
 				7E52B8321F5091C400656923 /* frameworks */,
 				7E52B81A1F5091A400656923 /* BeaconSample */,
 				7E52B8191F5091A400656923 /* Products */,
+				7EFB9FE01F9945CD0078796F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,9 +114,8 @@
 		7E52B8321F5091C400656923 /* frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7ED545111F68927B00AE2675 /* include */,
-				7ED5452C1F68927B00AE2675 /* libNucleus.a */,
-				7ED5452D1F68927B00AE2675 /* libValenceBeacon.a */,
+				7E3EF0271F99628500CD382C /* Nucleus.framework */,
+				7E3EF0261F99628500CD382C /* ValenceBeacon.framework */,
 				7E52B8501F50935400656923 /* AFNetworking.framework */,
 				7E52B84E1F50934E00656923 /* KontaktSDK.framework */,
 				7E52B84C1F50934900656923 /* Mantle.framework */,
@@ -145,47 +123,11 @@
 			name = frameworks;
 			sourceTree = "<group>";
 		};
-		7ED545111F68927B00AE2675 /* include */ = {
+		7EFB9FE01F9945CD0078796F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7ED545161F68927B00AE2675 /* Nucleus */,
-				7ED545291F68927B00AE2675 /* ValenceBeacon */,
 			);
-			name = include;
-			path = frameworks/include;
-			sourceTree = "<group>";
-		};
-		7ED545161F68927B00AE2675 /* Nucleus */ = {
-			isa = PBXGroup;
-			children = (
-				7ED545171F68927B00AE2675 /* NCAPIManager.h */,
-				7ED545181F68927B00AE2675 /* NCApplication.h */,
-				7ED545191F68927B00AE2675 /* NCContent.h */,
-				7ED5451A1F68927B00AE2675 /* NCContentManager.h */,
-				7ED5451B1F68927B00AE2675 /* NCContentTerms.h */,
-				7ED5451C1F68927B00AE2675 /* NCDevice.h */,
-				7ED5451D1F68927B00AE2675 /* NCGenericModel.h */,
-				7ED5451E1F68927B00AE2675 /* NCGenericTrigger.h */,
-				7ED5451F1F68927B00AE2675 /* NCGeofence.h */,
-				7ED545201F68927B00AE2675 /* NCModels.h */,
-				7ED545211F68927B00AE2675 /* NCScratcherResponse.h */,
-				7ED545221F68927B00AE2675 /* NCScratcherState.h */,
-				7ED545231F68927B00AE2675 /* NCSessionManager.h */,
-				7ED545241F68927B00AE2675 /* NCSignal.h */,
-				7ED545251F68927B00AE2675 /* NCStorycard.h */,
-				7ED545261F68927B00AE2675 /* NCTriggerManager.h */,
-				7ED545271F68927B00AE2675 /* NCUser.h */,
-				7ED545281F68927B00AE2675 /* NCValidation.h */,
-			);
-			path = Nucleus;
-			sourceTree = "<group>";
-		};
-		7ED545291F68927B00AE2675 /* ValenceBeacon */ = {
-			isa = PBXGroup;
-			children = (
-				7ED5452A1F68927B00AE2675 /* VATriggerBeacon.h */,
-			);
-			path = ValenceBeacon;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,8 +330,11 @@
 				DEVELOPMENT_TEAM = 653Y8XXFCP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/frameworks",
 				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = BeaconSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -397,6 +342,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/frameworks",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = me.actv8.BeaconSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -409,8 +355,11 @@
 				DEVELOPMENT_TEAM = 653Y8XXFCP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/frameworks",
 				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = BeaconSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -418,6 +367,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/frameworks",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = me.actv8.BeaconSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -27,7 +27,33 @@ typedef NS_ENUM(NSUInteger, NCRequestType) {
     NCRequestTypeDELETE
 };
 
+@interface NCPoint : NCGenericModel
+
+@property (nonatomic) CGFloat latitude;
+@property (nonatomic) CGFloat longitude;
+
+@end
+
+@interface NCTrackedObject : NCGenericModel
+
+@property (strong, nonatomic) NSNumber *timestamp;
+@property (strong, nonatomic) NSString *type;
+@property (strong, nonatomic) NSNumber *code;
+@property (strong, nonatomic) NSString *title;
+@property (strong, nonatomic) NSString *body;
+@property (strong, nonatomic) NCPoint *location;
+
+@end
+
 @interface NCAPIManager : NCSessionManager
+
+@property (nonatomic) BOOL logRequests;
+
+- (NSURLSessionDataTask *)request:(NCRequestType)type
+                              url:(NSString *)URLString
+                       parameters:(id)parameters
+                          success:(void (^)(id))success
+                          failure:(void (^)(NSError *))failure;
 
 #pragma mark - Getters / Setters
 

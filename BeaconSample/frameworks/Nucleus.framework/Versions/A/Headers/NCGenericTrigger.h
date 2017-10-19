@@ -14,6 +14,7 @@
 @optional
 - (void)triggerDidRegister:(NCGenericTrigger *)trigger error:(NSError *)error;
 - (void)triggerDidUnregister:(NCGenericTrigger *)trigger error:(NSError *)error;
+- (void)trigger:(NCGenericTrigger *)trigger foundBluetooth:(NSArray *)devices;
 
 @required
 - (void)trigger:(NCGenericTrigger *)trigger signal:(NCSignal *)signal didCatchContent:(NSArray <NCContent *>*)content error:(NSError *)error;

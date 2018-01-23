@@ -19,6 +19,7 @@
 #import "NCStorycard.h"
 #import "NCGeofence.h"
 #import "NCGenericModel.h"
+#import "NCEmail.h"
 
 typedef NS_ENUM(NSUInteger, NCRequestType) {
     NCRequestTypeGET,
@@ -103,14 +104,14 @@ typedef NS_ENUM(NSUInteger, NCRequestType) {
 /**
  * User Log in <br>
  * Updates Application instance <br>
- * Sets user object
+ * Sets user object / stores user object on disk
  */
-+ (void)login:(NCUser *)user callback:(void (^)(NSError *error))callback;
++ (void)login:(NCUser *)user callback:(void (^)(id response, NSError *error))callback;
 
 /**
  * User Log out <br>
  * Updates Application instance <br>
- * Removes user object
+ * Removes user object / removes user object from disk
  */
 + (void)logout:(void (^)(NSError *error))callback;
 
@@ -121,6 +122,33 @@ typedef NS_ENUM(NSUInteger, NCRequestType) {
  * must call log in method after
  */
 + (void)registerUser:(NCUser *)user callback:(void (^)(NSError *error))callback;
+
+/**
+ * Updates user <br>
+ * Sets the new user object / stores new user object on disk
+ */
++ (void)updateUser:(NCUser *)user callback:(void (^)(NSError *error))callback;
+
+/**
+ * Updates user <br>
+ * Sets the new user object / stores new user object on disk
+ */
++ (void)resetPassword:(NSString *)email callback:(void (^)(NSError *error))callback;
+
+/**
+ * Writes the User object to disk
+ */
++ (void)persistUserData;
+
+/**
+ * Reads the User object from disk
+ */
++ (NCUser *)retrieveUserData;
+
+/**
+ * Clear the User object from disk
+ */
++ (void)clearUserData;
 
 @end
 
@@ -143,12 +171,12 @@ typedef NS_ENUM(NSUInteger, NCRequestType) {
 /**
  * Catch content from a signal
  */
-+ (void)catchTrigger:(NCSignal *)trigger callback:(void (^)(NSArray *content, NSError *error))callback;
++ (void)catchTrigger:(NCSignal *)trigger callback:(void (^)(NSArray <NCContent *>*content, NSError *error))callback;
 
 /**
  * Get all content
  */
-+ (void)contentCallback:(void (^)(NSArray <NCContent *>*responseModel, NSError *error))callback;
++ (void)contentGetAndFilterBy:(NCContentStatus *)status callback:(void (^)(NSArray <NCContent *>*responseModel, NSError *error))callback;
 
 /**
  * Update content with a status
@@ -209,8 +237,8 @@ typedef NS_ENUM(NSUInteger, NCRequestType) {
 @interface NCAPIManager (Geofences)
 
 /**
- * Get all geofences
+ * Get all nearby geofences
  */
-+ (void)geofencesCallback:(void (^)(NSArray <NCGeofence *> *content, NSError *error))callback;
++ (void)geofencesDistance:(NSNumber *)meters callback:(void (^)(NCGeofenceState *state, NSArray <NCGeofence *> *, NSError *error))callback;
 
 @end

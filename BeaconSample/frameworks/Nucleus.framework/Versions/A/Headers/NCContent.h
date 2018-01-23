@@ -20,7 +20,16 @@ typedef NS_ENUM(NSUInteger, NCStatus) {
     NCStatusRedeemDelete
 };
 
+@interface NCImageModel : NCGenericModel
+
+@property (strong, nonatomic) NSString *url;
+@property (strong, nonatomic) NSString *filename;
+
+@end
+
 @interface NCContentStatus : NCGenericModel
+
+- (id)initWithStatus:(NCStatus)status;
 
 @property (nonatomic, strong) NSNumber *status;
 
@@ -28,10 +37,10 @@ typedef NS_ENUM(NSUInteger, NCStatus) {
 
 @interface NCImageMeta : NCGenericModel
 
-@property (nonatomic, strong) NSString *heroImageUrl;
-@property (nonatomic, strong) NSString *bodyImageUrl;
-@property (nonatomic, strong) NSString *overlayImageUrl;
-@property (nonatomic, strong) NSString *thumbnailImageUrl;
+@property (nonatomic, strong) NCImageModel *hero;
+@property (nonatomic, strong) NCImageModel *in_body;
+@property (nonatomic, strong) NCImageModel *overlay;
+@property (nonatomic, strong) NCImageModel *thumbnail;
 
 @end
 
@@ -48,11 +57,13 @@ typedef NS_ENUM(NSUInteger, NCStatus) {
 
 @property (nonatomic, strong) NSString *value;
 @property (nonatomic, strong) NSString *format;
+@property (nonatomic, strong) NSString *source;
 
 @end
 
 @interface NCRedemptionMeta : NCGenericModel
 
+@property (nonatomic, strong) NSString *url;
 @property (nonatomic, strong) NCRedemptionCode *code;
 @property (nonatomic, strong) NSNumber *method;
 

@@ -30,12 +30,12 @@
     [NCAPIManager setBaseUrl:@"<URL>"];
     [NCAPIManager setAPIKey:@"<API KEY>"];
     
-    [NCAPIManager login:user callback:^(NSError *error){
+    [NCAPIManager login:user callback:^(NSDictionary *response, NSError *error){
         if (error) {
             if (error.code == 404) {
                 [NCAPIManager registerUser:user callback:^(NSError *error) {
                     if (!error) {
-                        [NCAPIManager login:user callback:^(NSError *error){
+                        [NCAPIManager login:user callback:^(NSDictionary *response, NSError *error){
                             [self setupBeacons];
                         }];
                     }

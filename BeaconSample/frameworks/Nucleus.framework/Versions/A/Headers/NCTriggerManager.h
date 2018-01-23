@@ -58,4 +58,10 @@
  */
 - (nullable NSArray *)recentSignals;
 
+/**
+ * Clear signals caught from sources
+ * used typically between users
+ */
+- (void)clearSignals;
+
 @end

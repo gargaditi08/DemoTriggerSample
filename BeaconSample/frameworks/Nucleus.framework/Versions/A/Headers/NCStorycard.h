@@ -25,7 +25,7 @@
 @property (nonatomic, strong) NSNumber *Id;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *uuid;
-@property (nonatomic, strong) NSString *image;
+@property (nonatomic, strong) NSDictionary *image;
 @property (nonatomic, strong) NSNumber *type;
 @property (nonatomic, strong) NCStorycardButton *button1; // Thank you backend
 @property (nonatomic, strong) NCStorycardButton *button2; // for this /s

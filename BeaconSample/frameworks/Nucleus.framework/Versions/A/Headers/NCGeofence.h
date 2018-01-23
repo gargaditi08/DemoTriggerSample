@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "NCGenericModel.h"
+#import <CoreLocation/CoreLocation.h>
 
 @interface NCGeofenceGeometry : NCGenericModel
 
@@ -20,9 +21,18 @@
 
 @interface NCGeofence : NCGenericModel
 
+@property (nonatomic, strong) NSString *externalId;
 @property (nonatomic, strong) NCGeofenceGeometry *geometry;
 @property (nonatomic) NSNumber *radius;
 
 - (CLRegion *)region;
+
+@end
+
+@interface NCGeofenceState : NCGenericModel
+
+@property (nonatomic) CGFloat delay;
+@property (nonatomic) CGFloat distance;
+@property (nonatomic) CGFloat maxDistance;
 
 @end

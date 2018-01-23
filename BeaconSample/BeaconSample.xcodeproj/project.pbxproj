@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E3EF0281F99629700CD382C /* Nucleus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3EF0271F99628500CD382C /* Nucleus.framework */; };
-		7E3EF0291F99629700CD382C /* ValenceBeacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3EF0261F99628500CD382C /* ValenceBeacon.framework */; };
 		7E52B81D1F5091A400656923 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E52B81C1F5091A400656923 /* main.m */; };
 		7E52B8201F5091A400656923 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E52B81F1F5091A400656923 /* AppDelegate.m */; };
 		7E52B8231F5091A400656923 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E52B8221F5091A400656923 /* ViewController.m */; };
@@ -19,6 +17,10 @@
 		7E52B8531F50935B00656923 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E52B8501F50935400656923 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7E52B8551F50935B00656923 /* KontaktSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E52B84E1F50934E00656923 /* KontaktSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7E52B8571F50935B00656923 /* Mantle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E52B84C1F50934900656923 /* Mantle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7EEC76172017F53E002723DE /* ValenceBeacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEC76152017F53E002723DE /* ValenceBeacon.framework */; };
+		7EEC76182017F53E002723DE /* Nucleus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEC76162017F53E002723DE /* Nucleus.framework */; };
+		7EEC761B2017F6C2002723DE /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEC76192017F690002723DE /* PINCache.framework */; };
+		7EEC761C2017F6C2002723DE /* PINCache.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEC76192017F690002723DE /* PINCache.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +31,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				7E52B8551F50935B00656923 /* KontaktSDK.framework in Embed Frameworks */,
+				7EEC761C2017F6C2002723DE /* PINCache.framework in Embed Frameworks */,
 				7E52B8531F50935B00656923 /* AFNetworking.framework in Embed Frameworks */,
 				7E52B8571F50935B00656923 /* Mantle.framework in Embed Frameworks */,
 			);
@@ -38,8 +41,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7E3EF0261F99628500CD382C /* ValenceBeacon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ValenceBeacon.framework; path = frameworks/ValenceBeacon.framework; sourceTree = "<group>"; };
-		7E3EF0271F99628500CD382C /* Nucleus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nucleus.framework; path = frameworks/Nucleus.framework; sourceTree = "<group>"; };
 		7E52B8181F5091A400656923 /* BeaconSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeaconSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E52B81C1F5091A400656923 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7E52B81E1F5091A400656923 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +54,9 @@
 		7E52B84C1F50934900656923 /* Mantle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mantle.framework; path = Carthage/Build/iOS/Mantle.framework; sourceTree = "<group>"; };
 		7E52B84E1F50934E00656923 /* KontaktSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KontaktSDK.framework; path = Carthage/Build/iOS/KontaktSDK.framework; sourceTree = "<group>"; };
 		7E52B8501F50935400656923 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
+		7EEC76152017F53E002723DE /* ValenceBeacon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ValenceBeacon.framework; path = frameworks/ValenceBeacon.framework; sourceTree = "<group>"; };
+		7EEC76162017F53E002723DE /* Nucleus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nucleus.framework; path = frameworks/Nucleus.framework; sourceTree = "<group>"; };
+		7EEC76192017F690002723DE /* PINCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINCache.framework; path = frameworks/PINCache.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +64,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EEC761B2017F6C2002723DE /* PINCache.framework in Frameworks */,
+				7EEC76182017F53E002723DE /* Nucleus.framework in Frameworks */,
 				7E52B84D1F50934900656923 /* Mantle.framework in Frameworks */,
-				7E3EF0281F99629700CD382C /* Nucleus.framework in Frameworks */,
-				7E3EF0291F99629700CD382C /* ValenceBeacon.framework in Frameworks */,
+				7EEC76172017F53E002723DE /* ValenceBeacon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,8 +119,9 @@
 		7E52B8321F5091C400656923 /* frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7E3EF0271F99628500CD382C /* Nucleus.framework */,
-				7E3EF0261F99628500CD382C /* ValenceBeacon.framework */,
+				7EEC76192017F690002723DE /* PINCache.framework */,
+				7EEC76162017F53E002723DE /* Nucleus.framework */,
+				7EEC76152017F53E002723DE /* ValenceBeacon.framework */,
 				7E52B8501F50935400656923 /* AFNetworking.framework */,
 				7E52B84E1F50934E00656923 /* KontaktSDK.framework */,
 				7E52B84C1F50934900656923 /* Mantle.framework */,
@@ -157,7 +163,7 @@
 		7E52B8101F5091A400656923 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = actv8me;
 				TargetAttributes = {
 					7E52B8171F5091A400656923 = {
@@ -241,7 +247,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -249,7 +257,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -290,7 +302,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -298,7 +312,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

@@ -69,7 +69,7 @@ typedef void (^Scratcher)(NSArray <NCContent *>*wallet, NSArray <NCContent *>*sc
  * Get all content already caught <br>
  * content returned in a wallet array
  */
-+ (void)contentGetCallback:(Wallet)callback;
++ (void)contentGetAndFilter:(NCContentStatus *)status Callback:(Wallet)callback;
 
 /**
  * Update content from a signal <br>
@@ -88,6 +88,23 @@ typedef void (^Scratcher)(NSArray <NCContent *>*wallet, NSArray <NCContent *>*sc
  * content returned in a wallet array
  */
 + (void)contentDelete:(NCContent *)content callback:(Wallet)callback;
+
+#pragma mark - Content State Methods
+
+/**
+ * Reset the State of the scratchers
+ */
++ (void)resetScratcherState;
+
+/**
+ * Remove all entries in the wallet
+ */
++ (void)clearWallet;
+
+/**
+ * Remove all entries in scratchers
+ */
++ (void)clearScratchers;
 
 #pragma mark - CRUD Methods
 
@@ -115,12 +132,12 @@ typedef void (^Scratcher)(NSArray <NCContent *>*wallet, NSArray <NCContent *>*sc
  * Share to social media about mobii, call the method on completion to recieve additional scratcher <br>
  * additional scratchers return in scratcher callabck
  */
-+ (void)scratchersShareCallback:(Scratcher)callback;
++ (void)scratchersShareCallback:(void (^)(NCScratcherState *content, NSError *error))callback;
 
 /**
  * Debug method to reset scratchers to an "unscratched" state
  */ 
-+ (void)scratchersResetCallback:(void (^)())callback;
++ (void)scratchersResetCallback:(Scratcher)callback;
 
 #pragma mark - Get Storycard
 

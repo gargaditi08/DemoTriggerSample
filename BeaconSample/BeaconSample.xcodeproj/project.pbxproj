@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1287992720BC304400E9D89D /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 1287990420BC304300E9D89D /* User.m */; };
+		1287992820BC304400E9D89D /* ImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1287990520BC304300E9D89D /* ImageDownloader.m */; };
+		1287992920BC304400E9D89D /* AudioModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1287990620BC304300E9D89D /* AudioModel.m */; };
+		1287992A20BC304400E9D89D /* BarCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1287990B20BC304300E9D89D /* BarCodeGenerator.m */; };
+		1287992B20BC304400E9D89D /* DetailTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1287990D20BC304400E9D89D /* DetailTableCell.m */; };
+		1287992C20BC304400E9D89D /* HomeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1287990E20BC304400E9D89D /* HomeTableCell.m */; };
+		1287992D20BC304400E9D89D /* WalletCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1287991020BC304400E9D89D /* WalletCell.m */; };
+		1287992E20BC304400E9D89D /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1287991520BC304400E9D89D /* ImageCell.m */; };
+		1287992F20BC304400E9D89D /* AboutOfferCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1287991620BC304400E9D89D /* AboutOfferCell.m */; };
+		1287993020BC304400E9D89D /* MBNibs.m in Sources */ = {isa = PBXBuildFile; fileRef = 1287991820BC304400E9D89D /* MBNibs.m */; };
+		1287993120BC304400E9D89D /* MBState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1287991920BC304400E9D89D /* MBState.m */; };
+		1287993220BC304400E9D89D /* Availablility.m in Sources */ = {isa = PBXBuildFile; fileRef = 1287991B20BC304400E9D89D /* Availablility.m */; };
+		1287993320BC304400E9D89D /* MBTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1287991F20BC304400E9D89D /* MBTracking.m */; };
+		1287993420BC304400E9D89D /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1287992120BC304400E9D89D /* RequestManager.m */; };
+		1287993520BC304400E9D89D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1287992220BC304400E9D89D /* MBProgressHUD.m */; };
+		1287993620BC304400E9D89D /* TMRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1287992320BC304400E9D89D /* TMRequestManager.m */; };
+		1287994620BC319300E9D89D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1287993820BC319300E9D89D /* HomeViewController.m */; };
+		1287994820BC319300E9D89D /* RedeemOnlineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1287993F20BC319300E9D89D /* RedeemOnlineVC.m */; };
+		1287994920BC319300E9D89D /* RedeemInStoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1287994020BC319300E9D89D /* RedeemInStoreVC.m */; };
+		1287994A20BC319300E9D89D /* HomeTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1287994220BC319300E9D89D /* HomeTableVC.m */; };
+		1287994B20BC319300E9D89D /* DetailHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1287994420BC319300E9D89D /* DetailHomeVC.m */; };
+		1287994C20BC319300E9D89D /* WalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1287994520BC319300E9D89D /* WalletViewController.m */; };
 		7E52B81D1F5091A400656923 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E52B81C1F5091A400656923 /* main.m */; };
 		7E52B8201F5091A400656923 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E52B81F1F5091A400656923 /* AppDelegate.m */; };
 		7E52B8231F5091A400656923 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E52B8221F5091A400656923 /* ViewController.m */; };
@@ -41,6 +63,50 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1287990320BC304300E9D89D /* AudioModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioModel.h; sourceTree = "<group>"; };
+		1287990420BC304300E9D89D /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		1287990520BC304300E9D89D /* ImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDownloader.m; sourceTree = "<group>"; };
+		1287990620BC304300E9D89D /* AudioModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioModel.m; sourceTree = "<group>"; };
+		1287990720BC304300E9D89D /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		1287990820BC304300E9D89D /* ImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownloader.h; sourceTree = "<group>"; };
+		1287990A20BC304300E9D89D /* BarCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarCodeGenerator.h; sourceTree = "<group>"; };
+		1287990B20BC304300E9D89D /* BarCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarCodeGenerator.m; sourceTree = "<group>"; };
+		1287990D20BC304400E9D89D /* DetailTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableCell.m; sourceTree = "<group>"; };
+		1287990E20BC304400E9D89D /* HomeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableCell.m; sourceTree = "<group>"; };
+		1287990F20BC304400E9D89D /* ImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCell.h; sourceTree = "<group>"; };
+		1287991020BC304400E9D89D /* WalletCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletCell.m; sourceTree = "<group>"; };
+		1287991120BC304400E9D89D /* AboutOfferCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutOfferCell.h; sourceTree = "<group>"; };
+		1287991220BC304400E9D89D /* DetailTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableCell.h; sourceTree = "<group>"; };
+		1287991320BC304400E9D89D /* HomeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableCell.h; sourceTree = "<group>"; };
+		1287991420BC304400E9D89D /* WalletCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletCell.h; sourceTree = "<group>"; };
+		1287991520BC304400E9D89D /* ImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCell.m; sourceTree = "<group>"; };
+		1287991620BC304400E9D89D /* AboutOfferCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutOfferCell.m; sourceTree = "<group>"; };
+		1287991820BC304400E9D89D /* MBNibs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBNibs.m; sourceTree = "<group>"; };
+		1287991920BC304400E9D89D /* MBState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBState.m; sourceTree = "<group>"; };
+		1287991A20BC304400E9D89D /* MBTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBTracking.h; sourceTree = "<group>"; };
+		1287991B20BC304400E9D89D /* Availablility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Availablility.m; sourceTree = "<group>"; };
+		1287991C20BC304400E9D89D /* MBNibs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBNibs.h; sourceTree = "<group>"; };
+		1287991D20BC304400E9D89D /* MBState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBState.h; sourceTree = "<group>"; };
+		1287991E20BC304400E9D89D /* Availablility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Availablility.h; sourceTree = "<group>"; };
+		1287991F20BC304400E9D89D /* MBTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBTracking.m; sourceTree = "<group>"; };
+		1287992120BC304400E9D89D /* RequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestManager.m; sourceTree = "<group>"; };
+		1287992220BC304400E9D89D /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		1287992320BC304400E9D89D /* TMRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMRequestManager.m; sourceTree = "<group>"; };
+		1287992420BC304400E9D89D /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		1287992520BC304400E9D89D /* RequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestManager.h; sourceTree = "<group>"; };
+		1287992620BC304400E9D89D /* TMRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMRequestManager.h; sourceTree = "<group>"; };
+		1287993820BC319300E9D89D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		1287993920BC319300E9D89D /* RedeemInStoreVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedeemInStoreVC.h; sourceTree = "<group>"; };
+		1287993A20BC319300E9D89D /* RedeemOnlineVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedeemOnlineVC.h; sourceTree = "<group>"; };
+		1287993B20BC319300E9D89D /* HomeTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableVC.h; sourceTree = "<group>"; };
+		1287993C20BC319300E9D89D /* WalletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletViewController.h; sourceTree = "<group>"; };
+		1287993D20BC319300E9D89D /* DetailHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailHomeVC.h; sourceTree = "<group>"; };
+		1287993F20BC319300E9D89D /* RedeemOnlineVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedeemOnlineVC.m; sourceTree = "<group>"; };
+		1287994020BC319300E9D89D /* RedeemInStoreVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedeemInStoreVC.m; sourceTree = "<group>"; };
+		1287994120BC319300E9D89D /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		1287994220BC319300E9D89D /* HomeTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableVC.m; sourceTree = "<group>"; };
+		1287994420BC319300E9D89D /* DetailHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailHomeVC.m; sourceTree = "<group>"; };
+		1287994520BC319300E9D89D /* WalletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletViewController.m; sourceTree = "<group>"; };
 		7E52B8181F5091A400656923 /* BeaconSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeaconSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E52B81C1F5091A400656923 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7E52B81E1F5091A400656923 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -74,9 +140,101 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1287990220BC304300E9D89D /* BusinessModel */ = {
+			isa = PBXGroup;
+			children = (
+				1287990320BC304300E9D89D /* AudioModel.h */,
+				1287990620BC304300E9D89D /* AudioModel.m */,
+				1287990720BC304300E9D89D /* User.h */,
+				1287990420BC304300E9D89D /* User.m */,
+				1287990820BC304300E9D89D /* ImageDownloader.h */,
+				1287990520BC304300E9D89D /* ImageDownloader.m */,
+			);
+			path = BusinessModel;
+			sourceTree = "<group>";
+		};
+		1287990920BC304300E9D89D /* BarCode */ = {
+			isa = PBXGroup;
+			children = (
+				1287990A20BC304300E9D89D /* BarCodeGenerator.h */,
+				1287990B20BC304300E9D89D /* BarCodeGenerator.m */,
+			);
+			path = BarCode;
+			sourceTree = "<group>";
+		};
+		1287990C20BC304400E9D89D /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				1287991320BC304400E9D89D /* HomeTableCell.h */,
+				1287990E20BC304400E9D89D /* HomeTableCell.m */,
+				1287990F20BC304400E9D89D /* ImageCell.h */,
+				1287991520BC304400E9D89D /* ImageCell.m */,
+				1287991120BC304400E9D89D /* AboutOfferCell.h */,
+				1287991620BC304400E9D89D /* AboutOfferCell.m */,
+				1287991220BC304400E9D89D /* DetailTableCell.h */,
+				1287990D20BC304400E9D89D /* DetailTableCell.m */,
+				1287991420BC304400E9D89D /* WalletCell.h */,
+				1287991020BC304400E9D89D /* WalletCell.m */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		1287991720BC304400E9D89D /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				1287991C20BC304400E9D89D /* MBNibs.h */,
+				1287991820BC304400E9D89D /* MBNibs.m */,
+				1287991D20BC304400E9D89D /* MBState.h */,
+				1287991920BC304400E9D89D /* MBState.m */,
+				1287991A20BC304400E9D89D /* MBTracking.h */,
+				1287991F20BC304400E9D89D /* MBTracking.m */,
+				1287991E20BC304400E9D89D /* Availablility.h */,
+				1287991B20BC304400E9D89D /* Availablility.m */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		1287992020BC304400E9D89D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1287992620BC304400E9D89D /* TMRequestManager.h */,
+				1287992320BC304400E9D89D /* TMRequestManager.m */,
+				1287992520BC304400E9D89D /* RequestManager.h */,
+				1287992120BC304400E9D89D /* RequestManager.m */,
+				1287992420BC304400E9D89D /* MBProgressHUD.h */,
+				1287992220BC304400E9D89D /* MBProgressHUD.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		1287993720BC319300E9D89D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1287993C20BC319300E9D89D /* WalletViewController.h */,
+				1287994520BC319300E9D89D /* WalletViewController.m */,
+				1287994120BC319300E9D89D /* HomeViewController.h */,
+				1287993820BC319300E9D89D /* HomeViewController.m */,
+				1287993B20BC319300E9D89D /* HomeTableVC.h */,
+				1287994220BC319300E9D89D /* HomeTableVC.m */,
+				1287993D20BC319300E9D89D /* DetailHomeVC.h */,
+				1287994420BC319300E9D89D /* DetailHomeVC.m */,
+				1287993920BC319300E9D89D /* RedeemInStoreVC.h */,
+				1287994020BC319300E9D89D /* RedeemInStoreVC.m */,
+				1287993A20BC319300E9D89D /* RedeemOnlineVC.h */,
+				1287993F20BC319300E9D89D /* RedeemOnlineVC.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		7E52B80F1F5091A400656923 = {
 			isa = PBXGroup;
 			children = (
+				1287993720BC319300E9D89D /* ViewControllers */,
+				1287990920BC304300E9D89D /* BarCode */,
+				1287990220BC304300E9D89D /* BusinessModel */,
+				1287990C20BC304400E9D89D /* CustomCells */,
+				1287991720BC304400E9D89D /* NetworkLayer */,
+				1287992020BC304400E9D89D /* Utilities */,
 				7E52B8321F5091C400656923 /* frameworks */,
 				7E52B81A1F5091A400656923 /* BeaconSample */,
 				7E52B8191F5091A400656923 /* Products */,
@@ -209,9 +367,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1287993020BC304400E9D89D /* MBNibs.m in Sources */,
+				1287992D20BC304400E9D89D /* WalletCell.m in Sources */,
+				1287993120BC304400E9D89D /* MBState.m in Sources */,
+				1287994620BC319300E9D89D /* HomeViewController.m in Sources */,
+				1287992720BC304400E9D89D /* User.m in Sources */,
+				1287993620BC304400E9D89D /* TMRequestManager.m in Sources */,
+				1287992E20BC304400E9D89D /* ImageCell.m in Sources */,
 				7E52B8231F5091A400656923 /* ViewController.m in Sources */,
+				1287992C20BC304400E9D89D /* HomeTableCell.m in Sources */,
+				1287992820BC304400E9D89D /* ImageDownloader.m in Sources */,
+				1287992A20BC304400E9D89D /* BarCodeGenerator.m in Sources */,
+				1287993320BC304400E9D89D /* MBTracking.m in Sources */,
 				7E52B8201F5091A400656923 /* AppDelegate.m in Sources */,
+				1287992F20BC304400E9D89D /* AboutOfferCell.m in Sources */,
+				1287994820BC319300E9D89D /* RedeemOnlineVC.m in Sources */,
+				1287993220BC304400E9D89D /* Availablility.m in Sources */,
+				1287993520BC304400E9D89D /* MBProgressHUD.m in Sources */,
+				1287994A20BC319300E9D89D /* HomeTableVC.m in Sources */,
+				1287994920BC319300E9D89D /* RedeemInStoreVC.m in Sources */,
+				1287993420BC304400E9D89D /* RequestManager.m in Sources */,
+				1287992920BC304400E9D89D /* AudioModel.m in Sources */,
 				7E52B81D1F5091A400656923 /* main.m in Sources */,
+				1287994C20BC319300E9D89D /* WalletViewController.m in Sources */,
+				1287992B20BC304400E9D89D /* DetailTableCell.m in Sources */,
+				1287994B20BC319300E9D89D /* DetailHomeVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
